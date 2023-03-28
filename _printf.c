@@ -77,22 +77,6 @@ int _printf(const char *format, ...)
 		{"R", print_R},
 		{NULL, NULL}
 	};
-	flags_t flags[] = {
-		{" " || "+" || "#" || "-" || "0", flag_check},
-		{NULL, NULL}
-	};
-	length_t length[] = {
-		{"h" || "hh" || "l" || "ll" || "L", length_check},
-		{NULL, 0, 0, 0, 0, 0}
-	};
-	width_t width[] = {
-		{"num" || "*", width_check},
-		{NULL, 0, 0}
-	};
-	precision_t precision[] = {
-		{"num" || "." || "*", precision_check},
-		{NULL, 0, 0, 0}
-	};
 
 	if (format == NULL)
 		return (-1);
