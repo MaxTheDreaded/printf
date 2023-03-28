@@ -43,7 +43,7 @@ return (print_hex_string(i, hex, alpha));
 }
 
 /**
- * print_hex_upper - function that prints a hex
+ * print_HEX - function that prints a hex
  * @args: arguments
  * Return: number of characters printed
  */

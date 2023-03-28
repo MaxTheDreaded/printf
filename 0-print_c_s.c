@@ -35,11 +35,10 @@ int print_string(va_list args)
 
 /**
  * print_percent - function that prints a percent
- * @args: arguments
  * Return: number of characters printed
  */
 
-int print_percent(va_list args)
+int print_percent(void)
 {
 	_putchar('%');
 	return (1);

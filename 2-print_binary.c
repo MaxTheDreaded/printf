@@ -2,12 +2,13 @@
 
 /**
  * print_binary - function that prints the binary representation of a number
- * @n: number
+ * @args: arguments
  * Return: number of characters printed
  */
-int print_binary(unsigned long int n)
+int print_binary(va_list args)
 {
 	int i = 0, j = 0, count = 0;
+	unsigned long int n = va_arg(args, unsigned long int);
 	unsigned long int num = n;
 	unsigned long int num2 = n;
 

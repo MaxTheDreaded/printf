@@ -21,7 +21,7 @@ while (n / a > 9)
 a = a * 10;
 while (a != 0)
 {
-_putchar((n / a) + '0');
+_putchar((n / a) +'0');
 n = n % a;
 a = a / 10;
 count++;
