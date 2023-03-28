@@ -73,7 +73,34 @@ int _printf(const char *format, ...)
 		{"X", print_HEX},
 		{"S", print_S},
 		{"p", print_pointer},
+		{"r", print_rev},
+		{"R", print_rot13},
 		{NULL, NULL}
+	};
+	flags_t flags[] = {
+		{" ", print_space},
+		{"+", print_plus},
+		{"#", print_hash},
+		{"-", print_minus},
+		{"0", print_zero},
+		{NULL, NULL}
+	};
+	length_t length[] = {
+		{"h", 0, 0, 0, 0, 0},
+		{"hh", 0, 0, 0, 0, 0},
+		{"l", 0, 0, 0, 0, 0},
+		{"ll", 0, 0, 0, 0, 0},
+		{"L", 0, 0, 0, 0, 0},
+		{NULL, 0, 0, 0, 0, 0}
+	};
+	width_t width[] = {
+		{"num", 0, 0},
+		{"star", 0, 0},
+	};
+	precision_t precision[] = {
+		{"num", 0, 0, 0},
+		{"dot", 0, 0, 0},
+		{"star", 0, 0, 0},
 	};
 
 	if (format == NULL)
