@@ -10,6 +10,7 @@
 int cases(const char *format, format_t *print, va_list args)
 {
 	int i = 0, j = 0, count = 0;
+
 	while (format[i] != '\0')
 	{
 		if (format[i] == '%')
