@@ -41,7 +41,6 @@ int cases(const char *format, int i, va_list args)
 
 	return (count);
 }
-
 /**
   * _printf - produces output according to a format
   * @format: character string
