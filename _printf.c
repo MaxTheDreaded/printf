@@ -73,6 +73,8 @@ int _printf(const char *format, ...)
 		{"X", print_HEX},
 		{"S", print_S},
 		{"p", print_pointer},
+		{"r", print_r},
+		{"R", print_R},
 		{NULL, NULL}
 	};
 

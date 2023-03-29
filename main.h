@@ -40,6 +40,7 @@ struct fmt
 typedef struct fmt fmt_t;
 
 int _printf(const char *format, ...);
+<<<<<<< HEAD
 int handle_print(const char *fmt, int *i,
 		va_list list, char buffer[], int flags, int width, int precision, int size);
 
@@ -113,6 +114,27 @@ int is_digit(char);
 
 long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);
+=======
+int cases(const char *format, format_t *print, va_list args);
+int print_char(va_list args);
+int print_string(va_list args);
+int print_percent();
+int print_int(va_list args);
+int print_unsigned(va_list args);
+int print_octal(va_list args);
+int print_hex_string(unsigned int i, unsigned int hex, char alpha);
+int print_hex(va_list args);
+int print_binary(va_list args);
+int print_HEX(va_list args);
+int print_pointer(va_list args);
+int print_S(va_list args);
+int print_r(va_list args);
+int precision_check(const char *format, int i, precision_t *precision);
+int flag_check(const char *format, int i, flags_t *flags);
+int length_check(const char *format, int i, length_t *length);
+int print_R(va_list args);
+int width_check(const char *format, int i, width_t *width);
+>>>>>>> d53aa703664b80abd33d83354f2e0e2c31c27e50
 
 #endif /* MAIN_H */
 #ifndef MAIN_H
