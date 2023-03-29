@@ -16,8 +16,8 @@
 
 typedef struct format
 {
-	    char *f;
-	        int (*func)(va_list);
+	char *f;
+	int (*func)(va_list);
 } format_t;
 
 /**
@@ -56,16 +56,40 @@ typedef struct length
 	int L;
 } length_t;
 
+/**
+ * width - struct width
+ * @num: number
+ * @star: star flag
+ */
+
+typedef struct width
+{
+	int num;
+	int star;
+} width_t;
+
+/**
+ * precision - struct precision
+ * @num: number
+ * @dot: dot flag
+ * @star: star flag
+ */
+
+typedef struct precision
+{
+	int num;
+	int dot;
+	int star;
+} precision_t;
+
 int _putchar(char c);
 int _printf(const char *format, ...);
 int cases(const char *format, format_t *print, va_list args);
 int print_char(va_list args);
 int print_string(va_list args);
 int print_percent();
-int length_check(const char *format, int i, length_t *length);
 int print_int(va_list args);
 int print_unsigned(va_list args);
-int flag_check(const char *format, int i, flags_t *flags);
 int print_octal(va_list args);
 int print_hex_string(unsigned int i, unsigned int hex, char alpha);
 int print_hex(va_list args);
