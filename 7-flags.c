@@ -9,7 +9,7 @@
  */
 int flag_check(const char *format, int i, flags_t *flags)
 {
-	while (format[i] == ' ' || format[i] == '+' || format[i] == '#')
+	while (format[i] == ' ' || format[i] == '+' || format[i] == '#' || format[i] == '-' || format[i] == '0')
 	{
 		if (format[i] == ' ')
 			flags->space = 1;
@@ -17,6 +17,11 @@ int flag_check(const char *format, int i, flags_t *flags)
 			flags->plus = 1;
 		if (format[i] == '#')
 			flags->hash = 1;
+		if (format[i] == '-')
+			flags->minus = 1;
+		if (format[i] == '0')
+			flags->zero = 1;
 	}
 	return (i);
 }
+
