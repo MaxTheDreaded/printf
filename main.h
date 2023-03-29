@@ -25,7 +25,7 @@ int _printf(const char *format, ...);
 int cases(const char *format, format_t *print, va_list args);
 int print_char(va_list args);
 int print_string(va_list args);
-int print_percent();
+int print_percent(va_list args);
 int print_int(va_list args);
 int print_unsigned(va_list args);
 int print_octal(va_list args);

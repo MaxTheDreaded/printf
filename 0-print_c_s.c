@@ -39,7 +39,7 @@ int print_string(va_list args)
  * Return: number of characters printed
  */
 
-int print_percent(void)
+int print_percent(va_list args)
 {
 	_putchar('%');
 	return (1);
