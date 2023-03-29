@@ -21,6 +21,7 @@ int print_string(va_list args)
 {
 	int i = 0;
 	char *s = va_arg(args, char *);
+
 	if (s == NULL)
 		s = "(null)";
 	while (s[i] != '\0')
@@ -36,7 +37,7 @@ int print_string(va_list args)
  * @args: arguments
  * Return: number of characters printed
  */
-int print_percent()
+int print_percent(void)
 {
 	_putchar('%');
 	return (1);
