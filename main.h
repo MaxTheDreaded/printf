@@ -36,7 +36,25 @@ typedef struct flags
 	int hash;
 	int minus;
 	int zero;
-} flags_t
+} flags_t;
+
+/**
+ * length - struct length
+ * @h: h flag
+ * @hh: hh flag
+ * @l: l flag
+ * @ll: ll flag
+ * @L: L flag
+ */
+
+typedef struct length
+{
+	int h;
+	int hh;
+	int l;
+	int ll;
+	int L;
+} length_t;
 
 int _putchar(char c);
 int _printf(const char *format, ...);
