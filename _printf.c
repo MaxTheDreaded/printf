@@ -52,6 +52,16 @@ int cases(const char *format, format_t *print, va_list args)
 }
 
 /**
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ * Return: On success 1.
+*/
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
+
+/**
  * _printf - function that produces output according to a format
  * @format: format
  * Return: number of characters printed
