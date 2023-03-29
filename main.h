@@ -20,6 +20,24 @@ typedef struct format
 	        int (*func)(va_list);
 } format_t;
 
+/**
+ * flags - struct flags
+ * @space: space flag
+ * @plus: plus flag
+ * @hash: hash flag
+ * @minus: minus flag
+ * @zero: zero flag
+ */
+
+typedef struct flags
+{
+	int space;
+	int plus;
+	int hash;
+	int minus;
+	int zero;
+} flags_t
+
 int _putchar(char c);
 int _printf(const char *format, ...);
 int cases(const char *format, format_t *print, va_list args);
@@ -28,6 +46,7 @@ int print_string(va_list args);
 int print_percent();
 int print_int(va_list args);
 int print_unsigned(va_list args);
+int flag_check(const char *format, int i, flags_t *flags)
 int print_octal(va_list args);
 int print_hex_string(unsigned int i, unsigned int hex, char alpha);
 int print_hex(va_list args);
