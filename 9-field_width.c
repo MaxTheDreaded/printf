@@ -7,6 +7,7 @@
  * @width: struct of field width
  * Return: index of format string
  */
+
 int width_check(const char *format, int i, width_t *width)
 {
 if (format[i] == '*')

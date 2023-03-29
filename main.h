@@ -98,7 +98,8 @@ int print_HEX(va_list args);
 int print_pointer(va_list args);
 int print_S(va_list args);
 int print_r(va_list args);
-int precision_check(const char *format, int i, precision_t *precision)
+int precision_check(const char *format, int i, precision_t *precision);
 int print_R(va_list args);
+int width_check(const char *format, int i, width_t *width);
 
 #endif /* MAIN_H */
