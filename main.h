@@ -44,9 +44,10 @@ int cases(const char *format, format_t *print, va_list args);
 int print_char(va_list args);
 int print_string(va_list args);
 int print_percent();
+int length_check(const char *format, int i, length_t *length);
 int print_int(va_list args);
 int print_unsigned(va_list args);
-int flag_check(const char *format, int i, flags_t *flags)
+int flag_check(const char *format, int i, flags_t *flags);
 int print_octal(va_list args);
 int print_hex_string(unsigned int i, unsigned int hex, char alpha);
 int print_hex(va_list args);
