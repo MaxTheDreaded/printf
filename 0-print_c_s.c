@@ -17,6 +17,7 @@ int print_char(va_list args)
  * @args: arguments
  * Return: number of characters printed
  */
+
 int print_string(va_list args)
 {
 	int i = 0;
@@ -37,6 +38,7 @@ int print_string(va_list args)
  * @args: arguments
  * Return: number of characters printed
  */
+
 int print_percent(void)
 {
 	_putchar('%');
